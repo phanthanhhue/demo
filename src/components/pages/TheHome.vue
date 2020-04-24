@@ -1,0 +1,208 @@
+<template>
+  <div id="theHome" class="the-home">
+    <CardContainer>
+      <CardHolder>
+        <div class="home-page-header">
+          <h1 class="header-title">QT-Group</h1>
+          <p class="header-descripton">
+            THE GLOBAL QT-GROUP NOW HAS 1 COMPANY WITH MANY OFFICES IN VIETNAM , 2 COMPANIES IN CANADA AND 1 COMPANY IN THE USA.
+            THE GROUP'S PRINCIPAL ACTIVITIES ARE IN ARTIFICIAL INTELLIGENCE AND FINANCIAL INVESTMENT - APPLIED IN MANY FIELDS,
+            IN PARTICULARLY HOSPITALITY MANAGEMENT AND FINANCE FOR THE PAST THREE YEARS. CURRENTLY, THE GROUP IS IN THE PREPARATION
+            STAGE TO OPEN MORE COMPANIES IN NORTH AMERICA BECAUSE OF DIFFERENT LAWS IN EACH STATE, ESPECIALLY THE INTERESTS OF
+            CORPORATE INVESTMENT. OUR GROUP IS ALSO EXPANDING AND ESTABLISHING COMPANIES IN MANY REGIONS OF THE WORLD: NORTHERN EUROPE,
+            JAPAN, THE UNITED KINGDOM, AUSTRALIA, GERMANY AND SINGAPORE. EACH COMPANY OF QT-GROUP OUTSIDE VIETNAM IS CALLING THEIR
+            REGIONAL CAPITAL AND OUTSOURCING ON QT-VIETNAM TO DEVELOP AND REFINE ITS CORE PRODUCTS TO SUIT EACH REGION. IN THE PAST
+            THREE YEARS THE COMPANIES IN CANADA HAVE DONE SO. WITH STRONG WORLD-LEADING EXPERIENCE FROM OUR FOUNDERS ON ARTIFICIAL
+            INTELLIGENT APPLICATIONS, FINANCIAL MANAGING OF 150 MILLION USD INVESTMENT IN VIETNAM (2009-2014) AND JOINING 40 BILLION
+            USD INVESTMENT MANAGEMENT GROUP IN CANADA (2017-2018), EACH COMPANY OUTSIDE VIETNAM THIS YEAR IS EXPECTED TO CALL FOR
+            INVESTMENT OF 100 MILLION USD.
+          </p>
+        </div>
+      </CardHolder>
+      <CardHolder>
+        <div class="lastest-works">
+          <CardTitle />
+          <div class="latest-works-left">
+            <CardGeneral  />
+          </div>
+          <div class="latest-works-right">
+            <div class="right-above">
+              <CardGeneral  />
+            </div>
+            <div class="right-below">
+              <div class="left">
+                <CardGeneral  />
+              </div>
+              <div class="right">
+                <CardGeneral  />
+              </div>
+            </div>
+          </div>
+        </div>
+      </CardHolder>
+      <CardHolder>
+        <div class="our-leadership">
+          <h3>Our Leadership</h3>
+          <p>WHEN EACH TALENTED INDIVIDUAL GATHERS TOGETHER, IT MAKES A GREAT SUCCESS.</p>
+          <BaseButton :title="titleBtnAboutUs" :hwSize="[30, 100]" />
+        </div>
+        <div class="job-title">
+          <div class="founder">
+            <CardGeneral :title="'Henry Duong'" :jobTitle="'FOUNDER'" />
+            <p class="p-founder">
+              15+ years of success in management, data analytics and investment. Being (certified) member of
+              several famous global professional communities: CFA, CAIA, PRMIA, GARP, SOA, and CAS. Being a
+              well-known scholar researcher on wide range research areas: mathematics, computer science, finance,
+              risk management, insurance and economics. Postdoctoral researcher at Japan Advanced Institute of
+              Science and Technology on Machine Learning, PhD in Mathematics, MS in Computer Science, MA in
+              Analysis, BA in Mathematics & Computer Science.
+            </p>
+          </div>
+          <div class="co-founder">
+            <CardGeneral :title="'Adelina Ho'" :jobTitle="'CO-FOUNDER'" />
+            <p>
+              Adelina Ho has 13+ year work as Head of Programming Curriculum Committee and Lecturer. Not only
+              possessing expertise in optimization research with prestigious publications and reviewing
+              activities on high-ranked journals, she also has many years experience in developing statistical
+              models, interpreting and analyzing data for driving business solutions. Currently, she focuses
+              on developing QT-Data Inc. She graduated with her Master of Science in Optimization and Bachelor
+              of Science in Mathematics & Computer Science.
+            </p>
+          </div>
+        </div>
+      </CardHolder>
+      <CardHolder >
+        <CardTitle :title="maximTitle" />
+        <CardGeneral>
+          <p>
+            It was really fun getting to know the team during the project. They were all helpful in answering
+            my questions and made me feel at ease. The design ended up being better than I could have envisioned!
+          </p>
+        </CardGeneral>
+      </CardHolder>
+    </CardContainer>
+  </div>
+</template>
+
+<script>
+import CardContainer from '@/components/generals/CardContainer'
+import CardHolder from '@/components/generals/CardHolder'
+import CardGeneral from '@/components/generals/CardGeneral'
+import CardTitle from '@/components/elements/CardTitle'
+import BaseButton from '@/components/elements/BaseButton'
+
+export default {
+  name: 'TheHome',
+  components: {
+    CardContainer,
+    CardHolder,
+    CardGeneral,
+    CardTitle,
+    BaseButton
+  },
+  data () {
+    return {
+      maximTitle: 'WHAT THEY’RE SAYING',
+      titleBtnAboutUs: 'Learn About Us'
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.the-home {
+  width: 100%;
+  .card-holder {
+    display: flex;
+  }
+  .home-page-header {
+    width: 100%;
+    text-align: center;
+    padding: 60px;
+    margin-bottom: 10px;
+    background-image: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/homepage_header_003.jpg?time=1586443498');
+    background-size: contain;
+    color: #fff;
+    .header-descripton {
+      letter-spacing: 4px;
+      line-height: 40px;
+    }
+  }
+  .lastest-works {
+    display: flex;
+    width: 100%;
+    .latest-works-left {
+      margin-right: 5px;
+      height: 486px;
+      width: 50%;
+      background: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_001-1000x877.jpg') no-repeat;
+      background-size: cover;
+    }
+    .latest-works-right {
+      width: 50%;
+      margin-left: 5px;
+      .right-above {
+        margin-bottom: 5px;
+        height: 50%;
+        width: 100%;
+        background: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_002-1000x500.jpg') no-repeat;
+        background-size: cover;
+      }
+      .right-below {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        .left {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          margin-right: 5px;
+          width: 50%;
+          background: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_005-500x500.jpg') no-repeat;
+          background-size: cover;
+        }
+        .right {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          margin-left: 5px;
+          width: 50%;
+          background: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_006-500x500.jpg') no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  .our-leadership {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 60px;
+    h3 {
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+    p {
+      letter-spacing: 6px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  }
+  .job-title {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 30px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    .card-general {
+      :nth-child(2) {
+        font-weight: 800;
+        font-size: 30px;
+      }
+      :nth-child(3) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+</style>
