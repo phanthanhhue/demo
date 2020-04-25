@@ -7,6 +7,7 @@
       <PageHolder />
       <TheFooter />
     </div>
+    <div class="clear"></div>
   </div>
 </template>
 
@@ -26,10 +27,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-body {
-  margin: 0;
-  padding: 0;
-}
 .left-layout {
   border-right: 1px solid rgb(231, 231, 231);
   width: 270px;
@@ -43,12 +40,13 @@ body {
   width: calc(100%-270px);
   display: block;
   float: right;
-  top: 0;
-  left: 0;
 }
 @media only screen and (min-width: 1000px) {
   .right-layout {
-    width: calc(100% - 262px);
+    width: calc(100% - 270px);
   }
+}
+.clear {
+  clear: both;
 }
 </style>

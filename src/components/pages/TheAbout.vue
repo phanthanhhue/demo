@@ -2,42 +2,142 @@
   <div class="the-about">
     <CardContainer>
       <CardHolder>
-        <CardGeneral :title="topTitle"/>
-      </CardHolder>
-      <CardHolder>
-        <div class="vision-image">
-          <CardGeneral />
-        </div>
-        <div class="vision-content">
-          <CardGeneral :intro="'CONNECTING BRANDS AND IDEAS'" :title="'Vision'" :content="visionContent" :img="topStyles" />
+        <div class="top-about">
+          <h1>We Make Amazing Things Every Day</h1>
         </div>
       </CardHolder>
       <CardHolder>
-        <div class="mission-image">
-          <CardGeneral />
+        <div class="vision">
+          <div class="vision-image">
+            <div class="img-contain">
+              <div class="img-top"></div>
+              <div class="img-middle"></div>
+              <div class="img-bottom"></div>
+            </div>
+          </div>
+          <div class="vision-content">
+            <span class="intro">Connecting brands and ideas</span>
+            <span class="title">Vision</span>
+            <p>
+              “To be a respected solutions company focused on combining state-of-the-art of Machine Learning,
+              AI algorithms and delivering world-class quality big data solutions.”
+            </p>
+          </div>
         </div>
-        <div class="mission-content">
-          <CardGeneral :intro="'EVERYONE STAYS HAPPY'" :title="'Core Values'" :content="missionContent" />
+      </CardHolder>
+      <CardHolder>
+        <div class="mission">
+          <div class="mission-content">
+            <span class="intro">Everyone Stays Happy</span>
+            <span class="title">Mission</span>
+            <p>
+              “Simplifying delivery of complex big data with our innovative services and continuously optimizing
+              our every product to improve customers’ experience.”
+            </p>
+          </div>
+          <div class="mission-image">
+            <div class="img-contain">
+              <div class="img-top"></div>
+              <div class="img-middle"></div>
+              <div class="img-bottom"></div>
+            </div>
+          </div>
         </div>
       </CardHolder>
       <CardHolder>
         <div class="core-values">
-          <CardGeneral :intro="'WE’RE QUITE MULTI-DISCIPLINED'" :title="'Core Values'"/>
-          <div>
-            <!-- This is the slider -->
+          <span class="intro">We’re Quite Multi-Disciplined</span>
+          <span class="title">Core Values</span>
+          <div class="flipping">
+            <div id="flipping_container">
+              <div id="flipping_card" class="shadow">
+                <div class="front face">
+                  <div class="square-shape"></div>
+                  <h3>Simplicity</h3>
+                </div>
+                <div class="back face center">
+                  <p>Turning complex process into simple solution.</p>
+                </div>
+              </div>
+            </div>
+            <div id="flipping_container">
+              <div id="flipping_card" class="shadow">
+                <div class="front face">
+                  <div class="square-shape"></div>
+                  <h3>Simplicity</h3>
+                </div>
+                <div class="back face center">
+                  <p>Turning complex process into simple solution.</p>
+                </div>
+              </div>
+            </div>
+            <div id="flipping_container">
+              <div id="flipping_card" class="shadow">
+                <div class="front face">
+                  <div class="square-shape"></div>
+                  <h3>Simplicity</h3>
+                </div>
+                <div class="back face center">
+                  <p>Turning complex process into simple solution.</p>
+                </div>
+              </div>
+            </div>
+            <div id="flipping_container">
+              <div id="flipping_card" class="shadow">
+                <div class="front face">
+                  <div class="square-shape"></div>
+                  <h3>Simplicity</h3>
+                </div>
+                <div class="back face center">
+                  <p>Turning complex process into simple solution.</p>
+                </div>
+              </div>
+            </div>
+            <div id="flipping_container">
+              <div id="flipping_card" class="shadow">
+                <div class="front face">
+                  <div class="square-shape"></div>
+                  <h3>Simplicity</h3>
+                </div>
+                <div class="back face center">
+                  <p>Turning complex process into simple solution.</p>
+                </div>
+              </div>
+            </div>
+            <div id="flipping_container">
+              <div id="flipping_card" class="shadow">
+                <div class="front face">
+                  <div class="square-shape"></div>
+                  <h3>Simplicity</h3>
+                </div>
+                <div class="back face center">
+                  <p>Turning complex process into simple solution.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </CardHolder>
+      <CardHolder>
         <div class="human-resource">
-          <CardGeneral :intro="'ONE SPIRIT, ONE TEAM, ONE WIN'" :title="'Human Resources'"/>
-          <div>
-            <!-- This is the slider -->
+          <div class="hr-content">
+            <span class="intro">Add style for About page</span>
+            <span class="title">Human Resources</span>
+            <div>
+              <p>
+                Partners and customers are our top priority. We’re hyper-focused on making them more satisfied every day.
+                And we have never stopped trying to find ways to understand our customers and give them the best.
+              </p>
+            </div>
           </div>
         </div>
         <div class="customer-relations">
-          <CardGeneral :intro="'WE BUILD LASTING RELATIONSHIPS'" :title="'Customer Relations'"/>
-          <div>
-            <!-- This is the slider -->
-          </div>
+          <span class="intro">We build lasting relationships</span>
+            <span class="title">Customer Relations</span>
+            <div>
+              WE BUILD LASTING RELATIONSHIPS
+              Customer Relations
+            </div>
         </div>
         <div class="customer-relations">
           <CardGeneral :title="'MEMBER BRANDS'"/>
@@ -67,25 +167,234 @@ export default {
   },
   data () {
     return {
-      topTitle: 'We Make Amazing Things Every Day.',
-      topStyles: {
-        background: 'transparent url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/about_header_001.jpg?time=1586443498") no-repeat center',
-        height: 370 + 'px',
-        width: 768 + 'px'
-      },
-      visionStyles: {
-        background: 'transparent url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/qtq80-nsbUtH.jpeg?time=1586443498") no-repeat center',
-        height: 192 + 'px',
-        width: 308 + 'px'
-      },
-      visionContent: '“To be a respected solutions company focused on combining state-of-the-art of Machine Learning, AI algorithms and delivering world-class quality big data solutions.”',
-      missionContent: '“Simplifying delivery of complex big data with our innovative services and continuously optimizing our every product to improve customers’ experience.”'
-
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
+.the-about {
+  .top-about {
+    position: relative;
+    background: transparent url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/about_header_001.jpg?time=1586443498') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 750px;
+    text-align: center;
+    h1 {
+      font-size: 50px;
+      font-weight: 50;
+      color: white;
+      padding: 30px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .vision {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    .vision-image {
+      width: calc(50% + 270px);
+      height: 550px;
+      position: relative;
+      .img-contain {
+        .img-top {
+          position: absolute;
+          z-index: 3;
+          bottom: 25%;
+          left: 20%;
+          background: transparent url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/qtq80-nsbUtH-300x199.jpeg') no-repeat;
+          background-size: contain;
+          background-position: center center;
+          width: 300px;
+          height: 180px;
+        }
+        .img-middle{
+          position: absolute;
+          bottom: 25%;
+          right: 20%;
+          z-index: 2;
+          background: transparent url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/qtq80-4ivdYO-300x165.jpeg') no-repeat;
+          background-size: contain;
+          background-position: center center;
+          width: 250px;
+          height: 150px;
+        }
+        .img-bottom {
+          position: absolute;
+          top: 20%;
+          right: 30%;
+          z-index: 1;
+          background: transparent url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/homepage_team_001-300x149.jpg') no-repeat;
+          background-size: contain;
+          background-position: center center;
+          width: 300px;
+          height: 180px;
+        }
+      }
+    }
+    .vision-content {
+      width: 50%;
+      padding: 0 60px;
+      .intro {
+        color: #999;
+        font-size: 16px;
+        display: block;
+        text-transform: uppercase;
+      }
+      .title {
+        display: block;
+        color: #444;
+        font-size: 50px;
+        font-weight: 100;
+      }
+      p {
+        color: #676767
+      }
+    }
+  }
+  .mission {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    .mission-content {
+      text-align: right;
+      width: 50%;
+      padding: 0 60px;
+      .intro {
+        color: #999;
+        font-size: 16px;
+        display: block;
+        text-transform: uppercase;
+      }
+      .title {
+        display: block;
+        color: #444;
+        font-size: 50px;
+        font-weight: 100;
+      }
+      p {
+        color: #676767
+      }
+    }
+    .mission-image {
+      width: calc(50% + 270px);
+      height: 550px;
+      position: relative;
+      .img-contain {
+        .img-top {
+          position: absolute;
+          z-index: 3;
+          bottom: 30%;
+          right: 25%;
+          background: transparent url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/qtq80-He0gBO-300x190.jpeg') no-repeat;
+          background-size: contain;
+          background-position: center center;
+          width: 280px;
+          height: 180px;
+        }
+        .img-middle{
+          position: absolute;
+          bottom: 25%;
+          left: 20%;
+          z-index: 2;
+          background: transparent url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/qtq80-Cyb5m7-300x200.jpeg') no-repeat;
+          background-size: contain;
+          background-position: center center;
+          width:300px;
+          height: 180px;
+        }
+        .img-bottom {
+          position: absolute;
+          top: 20%;
+          right: 30%;
+          z-index: 1;
+          background: transparent url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/qtq80-1VDbXJ-300x200.jpeg') no-repeat;
+          background-size: contain;
+          background-position: center center;
+          width: 300px;
+          height: 180px;
+        }
+      }
+    }
+  }
+  .core-values {
+    margin: auto;
+    text-align: center;
+    .intro {
+      display: block;
+      font-size: 16px;
+      color: #999;
+      text-transform: uppercase;
+    }
+    .title {
+      font-weight: 100;
+      color: #444;
+      font-size: 50px;
+    }
+    .flipping {
+      padding: 60px;
+      height: 1000px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      #flipping_container {
+        padding: 20px;
+        position: relative;
+        width: 400px;
+        height: 400px;
+        z-index: 1;
+        perspective: 1000;
+        &:hover #flipping_card {
+          transform: rotateY(-180deg);
+        }
+        #flipping_card {
+          background-color: rgb(10, 10, 10);
+          width: 100%;
+          height: 100%;
+          transform-style: preserve-3d;
+          transition: all 0.6s linear;
+          color: white;
+        }
+        .face {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          .square-shape {
+            height: 66px;
+            width: 36px;
+            background-color: transparent;
+            border: solid 3px #1fb5ac;
+          }
+          h3 {
+            margin-top: 20px;
+          }
+        }
+        .face.back {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: rotateY(-180deg);
+          box-sizing: border-box;
+          padding: 10px;
+          color: white;
+          text-align: center;
+          background-color: rgb(43, 157, 206);
+          p {
+            margin: 50px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

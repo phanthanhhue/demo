@@ -130,6 +130,9 @@ export default {
   .lastest-works {
     display: flex;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     .latest-works-left {
       margin-right: 5px;
       height: 698px;
