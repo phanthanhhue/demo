@@ -111,7 +111,6 @@ export default {
 
 <style lang="scss" scoped>
 .the-home {
-  width: 100%;
   .card-holder {
     display: flex;
   }
@@ -133,7 +132,7 @@ export default {
     width: 100%;
     .latest-works-left {
       margin-right: 5px;
-      height: 486px;
+      height: 698px;
       width: 50%;
       background: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_001-1000x877.jpg') no-repeat;
       background-size: cover;

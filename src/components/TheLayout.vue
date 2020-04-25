@@ -1,8 +1,12 @@
 <template>
   <div class="the-layout">
+    <div class="left-layout">
     <TheNavbar />
-    <PageHolder />
-    <TheFooter />
+    </div>
+    <div class="right-layout">
+      <PageHolder />
+      <TheFooter />
+    </div>
   </div>
 </template>
 
@@ -25,5 +29,18 @@ export default {
 body {
   margin: 0;
   padding: 0;
+}
+.left-layout {
+  width: 14%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display:inline-block;
+}
+.right-layout {
+  width: 86%;
+  display: block;
+  float: right;
 }
 </style>
