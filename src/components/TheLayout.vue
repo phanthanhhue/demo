@@ -31,6 +31,7 @@ body {
   padding: 0;
 }
 .left-layout {
+  border-right: 1px solid rgb(231, 231, 231);
   width: 14%;
   position: fixed;
   top: 0;
@@ -42,5 +43,7 @@ body {
   width: 86%;
   display: block;
   float: right;
+  top: 0;
+  left: 0;
 }
 </style>

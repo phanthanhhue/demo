@@ -44,7 +44,6 @@ export default {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    font: inherit;
     ul {
       margin-left: -15px;
       li {
@@ -58,13 +57,13 @@ export default {
         border-radius: 5px;
         &:hover {
         cursor: pointer;
-        color: blanchedalmond;
-        background-color: rgb(9, 107, 236);
+        color: #FFF;
+        background-color: #1fb5ac;
         }
       }
       .router-link-exact-active {
-        color: blanchedalmond;
-        background-color: rgb(9, 107, 236);
+        color: #FFF;
+        background-color: #16a085;
       }
     }
   }
