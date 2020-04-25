@@ -64,10 +64,16 @@
               <div id="flipping_card" class="shadow">
                 <div class="front face">
                   <div class="square-shape"></div>
-                  <h3>Simplicity</h3>
+                  <h3>Integrity</h3>
+                  <span>Honest</span>
                 </div>
                 <div class="back face center">
-                  <p>Turning complex process into simple solution.</p>
+                  <p>
+                    We’re honest and forthright in every dealings, our commitment is to always do the right
+                    thing with our clients, partners, and members. Building trust through transparency lifts
+                    us all higher than we could rise. We always act morally, treating everyone with honesty
+                    and respect, and we follow through on commitments we make.
+                  </p>
                 </div>
               </div>
             </div>
@@ -75,10 +81,15 @@
               <div id="flipping_card" class="shadow">
                 <div class="front face">
                   <div class="square-shape"></div>
-                  <h3>Simplicity</h3>
+                  <h3>Boldness</h3>
                 </div>
                 <div class="back face center">
-                  <p>Turning complex process into simple solution.</p>
+                  <p>
+                    Opportunity could be seen as another form of risk. Do amazing things means taking risks.
+                    We move fast and we’re not afraid to make mistakes. Don’t avoid challenges that make you
+                    think insurmountable. QT Group makes you feel empowered to make decisions, build confidence
+                    and motivation to move forward.
+                  </p>
                 </div>
               </div>
             </div>
@@ -86,10 +97,15 @@
               <div id="flipping_card" class="shadow">
                 <div class="front face">
                   <div class="square-shape"></div>
-                  <h3>Simplicity</h3>
+                  <h3>Inovation</h3>
                 </div>
                 <div class="back face center">
-                  <p>Turning complex process into simple solution.</p>
+                  <p>
+                    We create a workplace where you can be assured to try new things, which we can overcome
+                    these limitations and learn from the things that do not always go according to plan.
+                    We are building a culture of innovation and continuous improvement, constantly seeking
+                    personal and professional growth.
+                  </p>
                 </div>
               </div>
             </div>
@@ -97,10 +113,16 @@
               <div id="flipping_card" class="shadow">
                 <div class="front face">
                   <div class="square-shape"></div>
-                  <h3>Simplicity</h3>
+                  <h3>Teamwork</h3>
                 </div>
                 <div class="back face center">
-                  <p>Turning complex process into simple solution.</p>
+                  <p>
+                    All members in QT group work together with mutual respect, cooperation, and appreciation
+                    for all of our points of view and different personality. Relationships deliver results
+                    because we can’t do our jobs without each other.  We work openly, inclusive and
+                    multi-functional because it allows us to build relationships, find out the potential
+                    competencies, and bring the best results.
+                  </p>
                 </div>
               </div>
             </div>
@@ -119,32 +141,6 @@
         </div>
       </CardHolder>
       <CardHolder>
-        <div class="human-resource">
-          <div class="hr-content">
-            <span class="intro">Add style for About page</span>
-            <span class="title">Human Resources</span>
-            <div>
-              <p>
-                Partners and customers are our top priority. We’re hyper-focused on making them more satisfied every day.
-                And we have never stopped trying to find ways to understand our customers and give them the best.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="customer-relations">
-          <span class="intro">We build lasting relationships</span>
-            <span class="title">Customer Relations</span>
-            <div>
-              WE BUILD LASTING RELATIONSHIPS
-              Customer Relations
-            </div>
-        </div>
-        <div class="customer-relations">
-          <CardGeneral :title="'MEMBER BRANDS'"/>
-          <div>
-            <!-- This is the slider -->
-          </div>
-        </div>
       </CardHolder>
     </CardContainer>
   </div>
@@ -174,6 +170,18 @@ export default {
 
 <style lang="scss" scoped>
 .the-about {
+  .intro {
+    color: #999;
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase;
+  }
+  .title {
+    display: block;
+    color: #444;
+    font-size: 50px;
+    font-weight: 100;
+  }
   .top-about {
     position: relative;
     background: transparent url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/about_header_001.jpg?time=1586443498') no-repeat;
@@ -239,18 +247,6 @@ export default {
     .vision-content {
       width: 50%;
       padding: 0 60px;
-      .intro {
-        color: #999;
-        font-size: 16px;
-        display: block;
-        text-transform: uppercase;
-      }
-      .title {
-        display: block;
-        color: #444;
-        font-size: 50px;
-        font-weight: 100;
-      }
       p {
         color: #676767
       }
@@ -337,15 +333,16 @@ export default {
     }
     .flipping {
       padding: 60px;
-      height: 1000px;
+      height: auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       #flipping_container {
+        line-height: 40px;
         padding: 20px;
         position: relative;
         width: 400px;
-        height: 400px;
+        height: 600px;
         z-index: 1;
         perspective: 1000;
         &:hover #flipping_card {
