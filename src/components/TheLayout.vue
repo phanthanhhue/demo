@@ -32,7 +32,7 @@ body {
 }
 .left-layout {
   border-right: 1px solid rgb(231, 231, 231);
-  width: 14%;
+  width: 270px;
   position: fixed;
   top: 0;
   left: 0;
@@ -40,10 +40,15 @@ body {
   display:inline-block;
 }
 .right-layout {
-  width: 86%;
+  width: calc(100%-270px);
   display: block;
   float: right;
   top: 0;
   left: 0;
+}
+@media only screen and (min-width: 1000px) {
+  .right-layout {
+    width: calc(100% - 262px);
+  }
 }
 </style>

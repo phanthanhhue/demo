@@ -74,7 +74,7 @@ export default {
       .twitter {
         margin-right: 20px;
         color: #38A1F3;
-         &:hover {
+        &:hover {
         cursor: pointer;
         color: rgb(9, 107, 236);;
         background-color: none;
@@ -83,7 +83,7 @@ export default {
       .facebook {
         margin-right: 20px;
         color: #4267b2;
-         &:hover {
+        &:hover {
         cursor: pointer;
         color: rgb(7, 75, 163);
         background-color: none;
@@ -92,7 +92,7 @@ export default {
       .youtube {
         margin-right: 20px;
         color: #ED3833;
-         &:hover {
+        &:hover {
         cursor: pointer;
         color: rgb(179, 41, 37);
         background-color: none;
@@ -101,7 +101,7 @@ export default {
       .vimeo {
         margin-right: 20px;
         color: #86c9ef;
-         &:hover {
+        &:hover {
         cursor: pointer;
         color: rgb(6, 65, 143);;
         background-color: none;
@@ -110,4 +110,25 @@ export default {
     }
   }
 }
+@media screen and (max-height: 882px) {
+  .the-navbar {
+    .nav-bar {
+      height: 690px;
+    }
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
 </style>
