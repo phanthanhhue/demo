@@ -40,7 +40,7 @@ export default {
     }
   }
   .nav-bar {
-    height: 790px;
+    height: calc(100vh - 160px);
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -110,13 +110,13 @@ export default {
     }
   }
 }
-@media screen and (max-height: 882px) {
-  .the-navbar {
-    .nav-bar {
-      height: 690px;
-    }
-  }
-}
+// @media screen and (max-height: 882px) {
+//   .the-navbar {
+//     .nav-bar {
+//       height: 690px;
+//     }
+//   }
+// }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 

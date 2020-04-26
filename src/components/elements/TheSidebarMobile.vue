@@ -40,9 +40,10 @@ export default {
 <style lang="scss" scoped>
 .the-sidebar {
   width: 100%;
-  background: rgb(231, 231, 231);
+  height: calc(100vh + 47px);
+  background: rgba(231, 231, 231, 0.938);
   .side-bar {
-    height: 900px;
+    height: calc(100vh - 140px);
     display: flex;
     flex-wrap: wrap;
     align-content: center;
