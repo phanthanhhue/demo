@@ -5,36 +5,49 @@
         <div class="home-page-header">
           <h1 class="header-title">QT-Group</h1>
           <p class="header-descripton">
-            THE GLOBAL QT-GROUP NOW HAS 1 COMPANY WITH MANY OFFICES IN VIETNAM , 2 COMPANIES IN CANADA AND 1 COMPANY IN THE USA.
-            THE GROUP'S PRINCIPAL ACTIVITIES ARE IN ARTIFICIAL INTELLIGENCE AND FINANCIAL INVESTMENT - APPLIED IN MANY FIELDS,
-            IN PARTICULARLY HOSPITALITY MANAGEMENT AND FINANCE FOR THE PAST THREE YEARS. CURRENTLY, THE GROUP IS IN THE PREPARATION
-            STAGE TO OPEN MORE COMPANIES IN NORTH AMERICA BECAUSE OF DIFFERENT LAWS IN EACH STATE, ESPECIALLY THE INTERESTS OF
-            CORPORATE INVESTMENT. OUR GROUP IS ALSO EXPANDING AND ESTABLISHING COMPANIES IN MANY REGIONS OF THE WORLD: NORTHERN EUROPE,
-            JAPAN, THE UNITED KINGDOM, AUSTRALIA, GERMANY AND SINGAPORE. EACH COMPANY OF QT-GROUP OUTSIDE VIETNAM IS CALLING THEIR
-            REGIONAL CAPITAL AND OUTSOURCING ON QT-VIETNAM TO DEVELOP AND REFINE ITS CORE PRODUCTS TO SUIT EACH REGION. IN THE PAST
-            THREE YEARS THE COMPANIES IN CANADA HAVE DONE SO. WITH STRONG WORLD-LEADING EXPERIENCE FROM OUR FOUNDERS ON ARTIFICIAL
-            INTELLIGENT APPLICATIONS, FINANCIAL MANAGING OF 150 MILLION USD INVESTMENT IN VIETNAM (2009-2014) AND JOINING 40 BILLION
-            USD INVESTMENT MANAGEMENT GROUP IN CANADA (2017-2018), EACH COMPANY OUTSIDE VIETNAM THIS YEAR IS EXPECTED TO CALL FOR
-            INVESTMENT OF 100 MILLION USD.
+            THE GLOBAL QT-GROUP NOW HAS 1 COMPANY WITH MANY OFFICES IN VIETNAM ,
+            2 COMPANIES IN CANADA AND 1 COMPANY IN THE USA. THE GROUP'S
+            PRINCIPAL ACTIVITIES ARE IN ARTIFICIAL INTELLIGENCE AND FINANCIAL
+            INVESTMENT - APPLIED IN MANY FIELDS, IN PARTICULARLY HOSPITALITY
+            MANAGEMENT AND FINANCE FOR THE PAST THREE YEARS. CURRENTLY, THE
+            GROUP IS IN THE PREPARATION STAGE TO OPEN MORE COMPANIES IN NORTH
+            AMERICA BECAUSE OF DIFFERENT LAWS IN EACH STATE, ESPECIALLY THE
+            INTERESTS OF CORPORATE INVESTMENT. OUR GROUP IS ALSO EXPANDING AND
+            ESTABLISHING COMPANIES IN MANY REGIONS OF THE WORLD: NORTHERN
+            EUROPE, JAPAN, THE UNITED KINGDOM, AUSTRALIA, GERMANY AND SINGAPORE.
+            EACH COMPANY OF QT-GROUP OUTSIDE VIETNAM IS CALLING THEIR REGIONAL
+            CAPITAL AND OUTSOURCING ON QT-VIETNAM TO DEVELOP AND REFINE ITS CORE
+            PRODUCTS TO SUIT EACH REGION. IN THE PAST THREE YEARS THE COMPANIES
+            IN CANADA HAVE DONE SO. WITH STRONG WORLD-LEADING EXPERIENCE FROM
+            OUR FOUNDERS ON ARTIFICIAL INTELLIGENT APPLICATIONS, FINANCIAL
+            MANAGING OF 150 MILLION USD INVESTMENT IN VIETNAM (2009-2014) AND
+            JOINING 40 BILLION USD INVESTMENT MANAGEMENT GROUP IN CANADA
+            (2017-2018), EACH COMPANY OUTSIDE VIETNAM THIS YEAR IS EXPECTED TO
+            CALL FOR INVESTMENT OF 100 MILLION USD.
           </p>
+          <div class="mouse-scrolldown-layout">
+            <div class="mouse-scrolldown">
+              <div class="scrolldown"></div>
+            </div>
+          </div>
         </div>
       </CardHolder>
       <CardHolder>
         <div class="lastest-works">
           <CardTitle />
           <div class="latest-works-left">
-            <CardGeneral  />
+            <CardGeneral />
           </div>
           <div class="latest-works-right">
             <div class="right-above">
-              <CardGeneral  />
+              <CardGeneral />
             </div>
             <div class="right-below">
               <div class="left">
-                <CardGeneral  />
+                <CardGeneral />
               </div>
               <div class="right">
-                <CardGeneral  />
+                <CardGeneral />
               </div>
             </div>
           </div>
@@ -50,33 +63,40 @@
           <div class="founder">
             <CardGeneral :title="'Henry Duong'" :jobTitle="'FOUNDER'" />
             <p class="p-founder">
-              15+ years of success in management, data analytics and investment. Being (certified) member of
-              several famous global professional communities: CFA, CAIA, PRMIA, GARP, SOA, and CAS. Being a
-              well-known scholar researcher on wide range research areas: mathematics, computer science, finance,
-              risk management, insurance and economics. Postdoctoral researcher at Japan Advanced Institute of
-              Science and Technology on Machine Learning, PhD in Mathematics, MS in Computer Science, MA in
-              Analysis, BA in Mathematics & Computer Science.
+              15+ years of success in management, data analytics and investment.
+              Being (certified) member of several famous global professional
+              communities: CFA, CAIA, PRMIA, GARP, SOA, and CAS. Being a
+              well-known scholar researcher on wide range research areas:
+              mathematics, computer science, finance, risk management, insurance
+              and economics. Postdoctoral researcher at Japan Advanced Institute
+              of Science and Technology on Machine Learning, PhD in Mathematics,
+              MS in Computer Science, MA in Analysis, BA in Mathematics &
+              Computer Science.
             </p>
           </div>
           <div class="co-founder">
             <CardGeneral :title="'Adelina Ho'" :jobTitle="'CO-FOUNDER'" />
             <p>
-              Adelina Ho has 13+ year work as Head of Programming Curriculum Committee and Lecturer. Not only
-              possessing expertise in optimization research with prestigious publications and reviewing
-              activities on high-ranked journals, she also has many years experience in developing statistical
-              models, interpreting and analyzing data for driving business solutions. Currently, she focuses
-              on developing QT-Data Inc. She graduated with her Master of Science in Optimization and Bachelor
-              of Science in Mathematics & Computer Science.
+              Adelina Ho has 13+ year work as Head of Programming Curriculum
+              Committee and Lecturer. Not only possessing expertise in
+              optimization research with prestigious publications and reviewing
+              activities on high-ranked journals, she also has many years
+              experience in developing statistical models, interpreting and
+              analyzing data for driving business solutions. Currently, she
+              focuses on developing QT-Data Inc. She graduated with her Master
+              of Science in Optimization and Bachelor of Science in Mathematics
+              & Computer Science.
             </p>
           </div>
         </div>
       </CardHolder>
-      <CardHolder >
+      <CardHolder>
         <CardTitle :title="maximTitle" />
         <CardGeneral>
           <p>
-            It was really fun getting to know the team during the project. They were all helpful in answering
-            my questions and made me feel at ease. The design ended up being better than I could have envisioned!
+            It was really fun getting to know the team during the project. They
+            were all helpful in answering my questions and made me feel at ease.
+            The design ended up being better than I could have envisioned!
           </p>
         </CardGeneral>
       </CardHolder>
@@ -116,22 +136,53 @@ export default {
   }
   .home-page-header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 900px;
+    height: 100vh;
     width: 100%;
     text-align: center;
-    padding: 60px;
     margin-bottom: 10px;
-    background-image: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/homepage_header_003.jpg?time=1586443498');
-    background-size: contain;
+    padding: 0 120px;
+    background: url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/homepage_header_003.jpg?time=1586443498")
+      no-repeat;
+    background-size: cover;
     color: #fff;
     .header-title {
+      font-family: Roboto;
+      text-transform: capitalize;
+      letter-spacing: 0px;
+      font-size: 77px;
+      font-weight: 100;
+      padding-bottom: 10px;
     }
     .header-descripton {
       letter-spacing: 4px;
-      line-height: 40px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    .mouse-scrolldown-layout {
+      position: absolute;
+      bottom: 40px;
+      .mouse-scrolldown {
+        position: relative;
+        width: 25px;
+        height: 40px;
+        border: 2px solid rgb(199, 199, 199);
+        border-radius: 12.5px;
+        animation: mouse 2s infinite;
+        .scrolldown {
+          position: absolute;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          background-color: rgb(199, 199, 199);
+          left: calc(50% - 3px);
+          border-radius: 2px;
+          animation: scrolldown 2s infinite;
+        }
+      }
     }
   }
   .lastest-works {
@@ -144,7 +195,8 @@ export default {
       margin-right: 5px;
       height: 698px;
       width: 50%;
-      background: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_001-1000x877.jpg') no-repeat;
+      background: url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_001-1000x877.jpg")
+        no-repeat;
       background-size: cover;
     }
     .latest-works-right {
@@ -154,7 +206,8 @@ export default {
         margin-bottom: 5px;
         height: 50%;
         width: 100%;
-        background: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_002-1000x500.jpg') no-repeat;
+        background: url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_002-1000x500.jpg")
+          no-repeat;
         background-size: cover;
       }
       .right-below {
@@ -166,7 +219,8 @@ export default {
           margin-bottom: 5px;
           margin-right: 5px;
           width: 50%;
-          background: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_005-500x500.jpg') no-repeat;
+          background: url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_005-500x500.jpg")
+            no-repeat;
           background-size: cover;
         }
         .right {
@@ -174,7 +228,8 @@ export default {
           margin-bottom: 5px;
           margin-left: 5px;
           width: 50%;
-          background: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_006-500x500.jpg') no-repeat;
+          background: url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_006-500x500.jpg")
+            no-repeat;
           background-size: cover;
         }
       }
@@ -213,5 +268,52 @@ export default {
     }
   }
 }
-
+@media only screen and (max-width: 1000px) {
+  .the-home {
+    .home-page-header {
+      .header-title {
+        font-size: 53.9px;
+      }
+      .header-descripton {
+        font-size: 10.8px;
+      }
+    }
+  }
+}
+@keyframes scrolldown {
+  0%{
+    opacity: 1;
+    top: 10px;
+  }
+  50%{
+    opacity: 0;
+    top: 25px;
+  }
+  70%{
+    opacity: 0;
+    top: 10px;
+  }
+  100%{
+    opacity: 1;
+    top: 10px;
+  }
+}
+@keyframes mouse {
+  0%{
+    opacity: 1;
+    top: 10px;
+  }
+  50%{
+    opacity: 1;
+    top: 25px;
+  }
+  70%{
+    opacity: 1;
+    top: 10px;
+  }
+  100%{
+    opacity: 1;
+    top: 10px;
+  }
+}
 </style>
