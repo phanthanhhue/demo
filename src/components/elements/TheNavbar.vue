@@ -33,7 +33,7 @@ export default {
 <style lang="scss" scoped>
 .the-navbar {
   .brand {
-    width: 200px;
+    width: 100px;
     margin-top: 20px;
     .logo {
       margin-left: 20px;

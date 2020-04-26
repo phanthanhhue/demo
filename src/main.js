@@ -5,12 +5,10 @@ import App from './App'
 import router from './router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFacebook, faTwitter, faYoutube, faVimeo } from '@fortawesome/free-brands-svg-icons'
-library.add(faFacebook, faTwitter, faYoutube, faVimeo)
-
-library.add(faUserSecret)
+library.add(faFacebook, faTwitter, faYoutube, faVimeo, faBars)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
