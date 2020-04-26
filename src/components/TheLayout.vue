@@ -46,7 +46,4 @@ export default {
     width: calc(100% - 270px);
   }
 }
-.clear {
-  clear: both;
-}
 </style>
