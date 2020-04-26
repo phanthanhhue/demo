@@ -115,6 +115,11 @@ export default {
     display: flex;
   }
   .home-page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
     width: 100%;
     text-align: center;
     padding: 60px;
@@ -122,6 +127,8 @@ export default {
     background-image: url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/homepage_header_003.jpg?time=1586443498');
     background-size: contain;
     color: #fff;
+    .header-title {
+    }
     .header-descripton {
       letter-spacing: 4px;
       line-height: 40px;
@@ -130,6 +137,9 @@ export default {
   .lastest-works {
     display: flex;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     .latest-works-left {
       margin-right: 5px;
       height: 698px;

@@ -1,8 +1,8 @@
 <template>
   <div class="card-general" :img="img">
-    <div>{{intro}}</div>
-    <div>{{title}}</div>
-    <div>{{jobTitle}}</div>
+    <div class="intro">{{intro}}</div>
+    <div class="title">{{title}}</div>
+    <div class="job-title">{{jobTitle}}</div>
   </div>
 </template>
 
