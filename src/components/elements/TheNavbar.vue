@@ -7,10 +7,10 @@
     </div>
     <div class="nav-bar">
       <ul>
-        <router-link class="nav-item" tag="li" to="/">Home</router-link>
-        <router-link class="nav-item" tag="li" to="/coronavirus-update">Coronavirus Update</router-link>
-        <router-link class="nav-item" tag="li" to="/about">About</router-link>
-        <router-link class="nav-item" tag="li" to="/contact">Contact</router-link>
+        <router-link class="nav-item" tag="li" :to="{hash: 'theHome'}">Home</router-link>
+        <router-link class="nav-item" tag="li" :to="{hash: 'coronavirusUpdate'}">Coronavirus Update</router-link>
+        <router-link class="nav-item" tag="li" :to="{hash: 'theAbout'}">About</router-link>
+        <router-link class="nav-item" tag="li" :to="{hash: 'theContact'}">Contact</router-link>
       </ul>
     </div>
     <div class="contact-icon">

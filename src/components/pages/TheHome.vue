@@ -56,11 +56,8 @@
       <CardHolder>
         <div class="our-leadership">
           <h3>Our Leadership</h3>
-          <p>
-            WHEN EACH TALENTED INDIVIDUAL GATHERS TOGETHER, IT MAKES A GREAT
-            SUCCESS.
-          </p>
-          <BaseButton :title="titleBtnAboutUs" :hwSize="[30, 100]" />
+          <p>WHEN EACH TALENTED INDIVIDUAL GATHERS TOGETHER, IT MAKES A GREAT SUCCESS.</p>
+          <BaseButton :title="titleBtnAboutUs" />
         </div>
         <div class="job-title">
           <div class="founder">
