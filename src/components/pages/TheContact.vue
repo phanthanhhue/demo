@@ -42,14 +42,19 @@
           <label for="name">Your Message <span>*</span></label>
           <textarea rows="15" type="text" name="name" placeholder="Your message here"></textarea>
         </div>
-        <button>Send Message</button>
+        <BaseButton :title="'Send Message'" />
       </form>
     </div>
   </div>
 </template>
 
 <script>
+import BaseButton from '@/components/elements/BaseButton'
 export default {
+  name: 'TheContact',
+  components: {
+    BaseButton
+  }
 
 }
 </script>
@@ -91,7 +96,7 @@ export default {
   .contact-right {
     width: 50%;
     background-color: #2c3742;
-    h2, .form-control, button {
+    h2, .form-control, .base-button {
       margin-left: 80px;
     }
     h2 {
@@ -123,7 +128,7 @@ export default {
         resize: none;
       }
     }
-    button {
+    .btn {
       color: white;
       background-color: rgb(41, 153, 153);
       border: none;
