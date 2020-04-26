@@ -16,13 +16,13 @@
 
 <script>
 export default {
-  name: "TheNavbarMobile",
+  name: 'TheNavbarMobile',
   methods: {
-    showSideBar: function() {
-      this.$emit("showSideBar");
+    showSideBar: function () {
+      this.$emit('showSideBar')
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

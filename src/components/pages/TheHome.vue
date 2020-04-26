@@ -105,14 +105,14 @@
 </template>
 
 <script>
-import CardContainer from "@/components/generals/CardContainer";
-import CardHolder from "@/components/generals/CardHolder";
-import CardGeneral from "@/components/generals/CardGeneral";
-import CardTitle from "@/components/elements/CardTitle";
-import BaseButton from "@/components/elements/BaseButton";
+import CardContainer from '@/components/generals/CardContainer'
+import CardHolder from '@/components/generals/CardHolder'
+import CardGeneral from '@/components/generals/CardGeneral'
+import CardTitle from '@/components/elements/CardTitle'
+import BaseButton from '@/components/elements/BaseButton'
 
 export default {
-  name: "TheHome",
+  name: 'TheHome',
   components: {
     CardContainer,
     CardHolder,
@@ -120,13 +120,13 @@ export default {
     CardTitle,
     BaseButton
   },
-  data() {
+  data () {
     return {
-      maximTitle: "WHAT THEY’RE SAYING",
-      titleBtnAboutUs: "Learn About Us"
-    };
+      maximTitle: 'WHAT THEY’RE SAYING',
+      titleBtnAboutUs: 'Learn About Us'
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
