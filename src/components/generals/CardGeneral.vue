@@ -29,6 +29,16 @@ export default {
       type: String,
       default: '',
       required: false
+    },
+    content: {
+      type: String,
+      default: '',
+      required: false
+    },
+    styles: {
+      type: Object,
+      default: () => {},
+      required: false
     }
   },
   data () {

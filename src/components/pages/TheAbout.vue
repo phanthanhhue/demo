@@ -1,6 +1,9 @@
 <template>
   <div class="the-about">
     <CardContainer>
+      <div class="top-about" >
+        <h2>We Make Amazing Things Every Day.</h2>
+      </div>
       <CardHolder>
         <div class="top-about">
           <h1>We Make Amazing Things Every Day</h1>
