@@ -20,18 +20,18 @@
 </template>
 
 <script>
-import TheNavbar from "@/components/elements/TheNavbar";
-import TheNavbarMobile from "@/components/elements/TheNavbarMobile";
-import TheSidebarMobile from "@/components/elements/TheSidebarMobile";
-import PageHolder from "@/components/generals/PageHolder";
-import TheFooter from "@/components/elements/TheFooter";
+import TheNavbar from '@/components/elements/TheNavbar'
+import TheNavbarMobile from '@/components/elements/TheNavbarMobile'
+import TheSidebarMobile from '@/components/elements/TheSidebarMobile'
+import PageHolder from '@/components/generals/PageHolder'
+import TheFooter from '@/components/elements/TheFooter'
 
 export default {
-  name: "TheLayout",
-  data() {
+  name: 'TheLayout',
+  data () {
     return {
       isShowSideBar: false
-    };
+    }
   },
   components: {
     TheNavbar,
@@ -41,11 +41,11 @@ export default {
     TheFooter
   },
   methods: {
-    showSideBar: function() {
-      this.isShowSideBar = !this.isShowSideBar;
+    showSideBar: function () {
+      this.isShowSideBar = !this.isShowSideBar
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

@@ -32,10 +32,11 @@ export default {
 
 <style lang="scss" scoped>
 .the-footer {
+  background-color: rgba(206, 201, 201, 0.267);
   .the-footer-content {
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 20px 40px;
     color: #b9b9bb;
     .content-widget {
       .widget-img {

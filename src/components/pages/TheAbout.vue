@@ -1,5 +1,5 @@
 <template>
-  <div class="the-about">
+  <div class="the-about" id="theAbout">
     <CardContainer>
       <CardHolder>
         <div class="top-about">
@@ -141,6 +141,14 @@
         </div>
       </CardHolder>
       <CardHolder>
+        <div class="human-resources">
+          <span class="intro">ONE SPIRIT, ONE TEAM, ONE WIN</span>
+          <span class="title">Human Resources</span>
+          <p>
+            “To be a respected solutions company focused on combining state-of-the-art of Machine Learning,
+            AI algorithms and delivering world-class quality big data solutions.”
+          </p>
+        </div>
       </CardHolder>
     </CardContainer>
   </div>
@@ -187,7 +195,7 @@ export default {
     background: transparent url('https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2020/03/about_header_001.jpg?time=1586443498') no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 750px;
+    height: 80vh;
     text-align: center;
     h1 {
       font-size: 50px;
