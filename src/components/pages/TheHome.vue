@@ -91,14 +91,14 @@
         </div>
       </CardHolder>
       <CardHolder>
-        <CardTitle :title="maximTitle" />
+        <!-- <CardTitle :title="maximTitle" />
         <CardGeneral>
           <p>
             It was really fun getting to know the team during the project. They
             were all helpful in answering my questions and made me feel at ease.
             The design ended up being better than I could have envisioned!
           </p>
-        </CardGeneral>
+        </CardGeneral> -->
       </CardHolder>
     </CardContainer>
   </div>
