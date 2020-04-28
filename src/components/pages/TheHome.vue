@@ -30,6 +30,9 @@
               <div class="scrolldown"></div>
             </div>
           </div>
+          <div class="messenger-chatbot">
+
+          </div>
         </div>
       </CardHolder>
       <CardHolder>
@@ -183,6 +186,12 @@ export default {
           animation: scrolldown 2s infinite;
         }
       }
+    }
+    .messenger-chatbot {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      background-color: rgb(207, 138, 138);
     }
   }
   .lastest-works {
