@@ -3,14 +3,26 @@
     {{intro}}
     {{title}}
     {{jobTitle}}
-    {{date}}
-    {{description}}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CardTitle'
+  name: 'CardTitle',
+  props: {
+    intro: {
+      type: String,
+      default: ''
+    },
+    title: {
+      type: String,
+      default: ''
+    },
+    jobTitle: {
+      type: String,
+      default: ''
+    }
+  }
 }
 </script>
 
