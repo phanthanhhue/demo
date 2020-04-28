@@ -189,9 +189,13 @@ export default {
     }
     .messenger-chatbot {
       position: absolute;
-      bottom: 40px;
-      right: 40px;
+      bottom: 25px;
+      right: 25px;
       background-color: rgb(207, 138, 138);
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      position: fixed;
     }
   }
   .lastest-works {
