@@ -119,14 +119,14 @@
 </template>
 
 <script>
-import CardContainer from "@/components/generals/CardContainer";
-import CardHolder from "@/components/generals/CardHolder";
-import CardGeneral from "@/components/generals/CardGeneral";
-import CardTitle from "@/components/elements/CardTitle";
-import BaseButton from "@/components/elements/BaseButton";
+import CardContainer from '@/components/generals/CardContainer'
+import CardHolder from '@/components/generals/CardHolder'
+import CardGeneral from '@/components/generals/CardGeneral'
+import CardTitle from '@/components/elements/CardTitle'
+import BaseButton from '@/components/elements/BaseButton'
 
 export default {
-  name: "TheHome",
+  name: 'TheHome',
   components: {
     CardContainer,
     CardHolder,
@@ -134,32 +134,16 @@ export default {
     CardTitle,
     BaseButton
   },
-  data() {
+  data () {
     return {
-      maximTitle: "WHAT THEY’RE SAYING",
-      titleBtnAboutUs: "Learn About Us"
-    };
+      maximTitle: 'WHAT THEY’RE SAYING',
+      titleBtnAboutUs: 'Learn About Us'
+    }
   }
-};
-window.fbAsyncInit = function() {
-  FB.init({
-    xfbml: true,
-    version: "v6.0"
-  });
-};
-
-(function(d, s, id) {
-  var js,
-    fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-  fjs.parentNode.insertBefore(js, fjs);
-})(document, "script", "facebook-jssdk");
+}
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
 .the-home {
   .card-holder {
     display: flex;
