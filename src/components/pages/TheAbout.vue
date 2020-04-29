@@ -1,5 +1,5 @@
 <template>
-  <div class="the-about" id="theAbout">
+  <div class="the-about">
     <CardContainer>
       <CardHolder>
         <div class="top-about">

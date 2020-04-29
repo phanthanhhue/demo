@@ -7,11 +7,10 @@
     </div>
     <div class="nav-bar">
       <ul>
-        <router-link class="nav-item" tag="li" :to="{hash: 'theHome'}">Home</router-link>
-        <router-link class="nav-item" tag="li" :to="{hash: 'coronavirusUpdate'}">Coronavirus Update</router-link>
-        <router-link class="nav-item" tag="li" :to="{hash: 'theAbout'}">About</router-link>
-        <router-link class="nav-item" tag="li" :to="{hash: 'theContact'}">Contact</router-link>
-        <button class="nav-item" tag="li" @click="goto('home-page')">Home</button>
+        <router-link class="nav-item" tag="li" :to="{hash: ''}">Home</router-link>
+        <router-link class="nav-item" tag="li" :to="{hash: 'coronavirus-update'}">Coronavirus Update</router-link>
+        <router-link class="nav-item" tag="li" :to="{hash: 'about'}">About</router-link>
+        <router-link class="nav-item" tag="li" :to="{hash: 'contact'}">Contact</router-link>
       </ul>
     </div>
     <div class="contact-icon">
@@ -28,16 +27,17 @@
 <script>
 export default {
   name: 'TheNavbar',
-  methods:{
-    goto(id) {
-        var element = document.getElementById(id);
-        console.log(element);
-        var top = element.offsetTop;
-        window.scroll({
-          top: top,
-          left: 0,
-          behavior: 'smooth'
-        })
+  data () {
+    return {
+      isActive: true
+    }
+  },
+  methods: {
+    removeSelected: function () {
+      if (this.isActive === true) {
+        alert(this.isActive)
+        this.isActive = false
+      }
     }
   }
 }

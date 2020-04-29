@@ -1,5 +1,5 @@
 <template>
-  <div class="the-contact" id="theContact">
+  <div class="the-contact">
     <div class="contact-left">
       <h1>Contact</h1>
       <div class="canada-contact">

@@ -1,5 +1,5 @@
 <template>
-  <div class="news" id="coronavirusUpdate">
+  <div class="news">
     <div>
       <iframe seamless="" scrolling="no"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTw8X4gXprDvqzoWC_wah6kY6h3ZYOli-7n3FDCj_rgtn7NSU6Q9nj2EUz7-O7Cf1FLXBYeZE-CAUWj/pubchart?oid=1547971389&amp;format=interactive"

@@ -1,15 +1,15 @@
 <template>
   <div class="page-holder">
     <router-view />
-    <section class="section-coronavirus-updates">
+    <section id="coronavirus-update" class="section-coronavirus-updates">
       <h1>Coronavirus Update</h1>
       <CoronavirusUpdate />
     </section>
-    <section class="section-about">
+    <section id="about" class="section-about">
       <h1>The About</h1>
       <About />
     </section>
-    <section class="sectioin-contact">
+    <section id="contact" class="sectioin-contact">
       <h1>The Contact</h1>
       <Contact />
     </section>

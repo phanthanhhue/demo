@@ -1,5 +1,5 @@
 <template>
-  <div id="theHome" class="the-home">
+  <div id="home" class="the-home">
     <CardContainer>
       <CardHolder>
         <div class="home-page-header" id="home-page">
@@ -26,11 +26,14 @@
             CALL FOR INVESTMENT OF 100 MILLION USD.
           </p>
           <div class="mouse-scrolldown-layout">
-            <div class="mouse-scrolldown">
+            <div
+              class="mouse-scrolldown"
+              @click="scrollmousedown('lastest-works')"
+            >
               <div class="scrolldown"></div>
             </div>
           </div>
-          <div class="messenger-chatbot">
+          <div class="chatbot-layout">
             <!-- Load Facebook SDK for JavaScript -->
             <div id="fb-root"></div>
             <!-- Your customer chat code -->
@@ -38,13 +41,13 @@
               class="fb-customerchat"
               attribution="setup_tool"
               page_id="318422449030240"
-              theme_color="#e68585"
+              theme_color="#0084ff"
             ></div>
           </div>
         </div>
       </CardHolder>
       <CardHolder>
-        <div class="lastest-works">
+        <div id="lastest-works" class="lastest-works-layout">
           <CardTitle />
           <div class="latest-works-left">
             <CardGeneral />
@@ -119,31 +122,14 @@
 </template>
 
 <script>
-window.fbAsyncInit = function() {
-  FB.init({
-    xfbml: true,
-    version: "v6.0"
-  });
-};
-
-(function(d, s, id) {
-  var js,
-    fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-  fjs.parentNode.insertBefore(js, fjs);
-})(document, "script", "facebook-jssdk");
-
-import CardContainer from "@/components/generals/CardContainer";
-import CardHolder from "@/components/generals/CardHolder";
-import CardGeneral from "@/components/generals/CardGeneral";
-import CardTitle from "@/components/elements/CardTitle";
-import BaseButton from "@/components/elements/BaseButton";
+import CardContainer from '@/components/generals/CardContainer'
+import CardHolder from '@/components/generals/CardHolder'
+import CardGeneral from '@/components/generals/CardGeneral'
+import CardTitle from '@/components/elements/CardTitle'
+import BaseButton from '@/components/elements/BaseButton'
 
 export default {
-  name: "TheHome",
+  name: 'TheHome',
   components: {
     CardContainer,
     CardHolder,
@@ -151,16 +137,25 @@ export default {
     CardTitle,
     BaseButton
   },
-  data() {
+  data () {
     return {
-      maximTitle: "WHAT THEY’RE SAYING",
-      titleBtnAboutUs: "Learn About Us"
-    };
+      maximTitle: 'WHAT THEY’RE SAYING',
+      titleBtnAboutUs: 'Learn About Us'
+    }
   },
-  mounted(){
-    console.log(this.$refs.home)
+  methods: {
+    scrollmousedown: function (id) {
+      var element = document.getElementById(id)
+      console.log(element)
+      var top = element.offsetTop
+      window.scroll({
+        top: top,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -189,6 +184,7 @@ export default {
       font-size: 77px;
       font-weight: 100;
       padding-bottom: 10px;
+      margin: 0;
     }
     .header-descripton {
       letter-spacing: 4px;
@@ -203,7 +199,7 @@ export default {
         position: relative;
         width: 25px;
         height: 40px;
-        border: 2px solid rgb(199, 199, 199);
+        border: 2px solid rgb(158, 158, 158);
         border-radius: 12.5px;
         animation: mouse 2s infinite;
         .scrolldown {
@@ -211,10 +207,13 @@ export default {
           top: 5px;
           width: 5px;
           height: 10px;
-          background-color: rgb(199, 199, 199);
+          background-color: rgb(158, 158, 158);
           left: calc(50% - 3px);
           border-radius: 2px;
           animation: scrolldown 2s infinite;
+        }
+        &:hover {
+          border: 2px solid rgb(255, 255, 255);
         }
       }
     }
@@ -227,7 +226,7 @@ export default {
       z-index: 1;
     }
   }
-  .lastest-works {
+  .lastest-works-layout {
     display: flex;
     width: 100%;
     padding-left: 10px;
@@ -310,14 +309,14 @@ export default {
     }
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px), (max-height: 900px) {
   .the-home {
     .home-page-header {
       .header-title {
         font-size: 53.9px;
       }
       .header-descripton {
-        font-size: 10.8px;
+        font-size: 10px;
       }
     }
   }
