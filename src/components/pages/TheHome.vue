@@ -2,7 +2,7 @@
   <div id="theHome" class="the-home">
     <CardContainer>
       <CardHolder>
-        <div class="home-page-header">
+        <div class="home-page-header" id="home-page">
           <h1 class="header-title">QT-Group</h1>
           <p class="header-descripton">
             THE GLOBAL QT-GROUP NOW HAS 1 COMPANY WITH MANY OFFICES IN VIETNAM ,
@@ -156,6 +156,9 @@ export default {
       maximTitle: "WHAT THEY’RE SAYING",
       titleBtnAboutUs: "Learn About Us"
     };
+  },
+  mounted(){
+    console.log(this.$refs.home)
   }
 };
 </script>

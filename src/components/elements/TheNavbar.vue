@@ -11,6 +11,7 @@
         <router-link class="nav-item" tag="li" :to="{hash: 'coronavirusUpdate'}">Coronavirus Update</router-link>
         <router-link class="nav-item" tag="li" :to="{hash: 'theAbout'}">About</router-link>
         <router-link class="nav-item" tag="li" :to="{hash: 'theContact'}">Contact</router-link>
+        <button class="nav-item" tag="li" @click="goto('home-page')">Home</button>
       </ul>
     </div>
     <div class="contact-icon">
@@ -26,7 +27,19 @@
 
 <script>
 export default {
-  name: 'TheNavbar'
+  name: 'TheNavbar',
+  methods:{
+    goto(id) {
+        var element = document.getElementById(id);
+        console.log(element);
+        var top = element.offsetTop;
+        window.scroll({
+          top: top,
+          left: 0,
+          behavior: 'smooth'
+        })
+    }
+  }
 }
 </script>
 
