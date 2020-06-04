@@ -68,42 +68,44 @@
         </div>
       </CardHolder>
       <CardHolder>
-        <div class="our-leadership">
-          <h3>Our Leadership</h3>
-          <p>
-            WHEN EACH TALENTED INDIVIDUAL GATHERS TOGETHER, IT MAKES A GREAT
-            SUCCESS.
-          </p>
-          <BaseButton :title="titleBtnAboutUs" />
-        </div>
-        <div class="job-title">
-          <div class="founder">
-            <CardGeneral :title="'Henry Duong'" :jobTitle="'FOUNDER'" />
-            <p class="p-founder">
-              15+ years of success in management, data analytics and investment.
-              Being (certified) member of several famous global professional
-              communities: CFA, CAIA, PRMIA, GARP, SOA, and CAS. Being a
-              well-known scholar researcher on wide range research areas:
-              mathematics, computer science, finance, risk management, insurance
-              and economics. Postdoctoral researcher at Japan Advanced Institute
-              of Science and Technology on Machine Learning, PhD in Mathematics,
-              MS in Computer Science, MA in Analysis, BA in Mathematics &
-              Computer Science.
-            </p>
-          </div>
-          <div class="co-founder">
-            <CardGeneral :title="'Adelina Ho'" :jobTitle="'CO-FOUNDER'" />
+        <div class="wraper-contain">
+          <div class="our-leadership">
+            <h3>Our Leadership</h3>
             <p>
-              Adelina Ho has 13+ year work as Head of Programming Curriculum
-              Committee and Lecturer. Not only possessing expertise in
-              optimization research with prestigious publications and reviewing
-              activities on high-ranked journals, she also has many years
-              experience in developing statistical models, interpreting and
-              analyzing data for driving business solutions. Currently, she
-              focuses on developing QT-Data Inc. She graduated with her Master
-              of Science in Optimization and Bachelor of Science in Mathematics
-              & Computer Science.
+              WHEN EACH TALENTED INDIVIDUAL GATHERS TOGETHER, IT MAKES A GREAT
+              SUCCESS.
             </p>
+            <BaseButton :title="titleBtnAboutUs" />
+          </div>
+          <div class="job-title">
+            <div class="founder">
+              <CardGeneral :title="'Henry Duong'" :jobTitle="'FOUNDER'" />
+              <p class="p-founder">
+                15+ years of success in management, data analytics and
+                investment. Being (certified) member of several famous global
+                professional communities: CFA, CAIA, PRMIA, GARP, SOA, and CAS.
+                Being a well-known scholar researcher on wide range research
+                areas: mathematics, computer science, finance, risk management,
+                insurance and economics. Postdoctoral researcher at Japan
+                Advanced Institute of Science and Technology on Machine
+                Learning, PhD in Mathematics, MS in Computer Science, MA in
+                Analysis, BA in Mathematics & Computer Science.
+              </p>
+            </div>
+            <div class="co-founder">
+              <CardGeneral :title="'Adelina Ho'" :jobTitle="'CO-FOUNDER'" />
+              <p>
+                Adelina Ho has 13+ year work as Head of Programming Curriculum
+                Committee and Lecturer. Not only possessing expertise in
+                optimization research with prestigious publications and
+                reviewing activities on high-ranked journals, she also has many
+                years experience in developing statistical models, interpreting
+                and analyzing data for driving business solutions. Currently,
+                she focuses on developing QT-Data Inc. She graduated with her
+                Master of Science in Optimization and Bachelor of Science in
+                Mathematics & Computer Science.
+              </p>
+            </div>
           </div>
         </div>
       </CardHolder>
@@ -239,6 +241,7 @@ export default {
       background: url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_001-1000x877.jpg")
         no-repeat;
       background-size: cover;
+      background-position: center;
     }
     .latest-works-right {
       width: 50%;
@@ -250,6 +253,7 @@ export default {
         background: url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_002-1000x500.jpg")
           no-repeat;
         background-size: cover;
+        background-position: center;
       }
       .right-below {
         display: flex;
@@ -263,6 +267,7 @@ export default {
           background: url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_005-500x500.jpg")
             no-repeat;
           background-size: cover;
+          background-position: center;
         }
         .right {
           margin-top: 5px;
@@ -272,44 +277,48 @@ export default {
           background: url("https://secureservercdn.net/198.71.233.68/3xf.d8b.myftpupload.com/wp-content/uploads/2016/10/template_006-500x500.jpg")
             no-repeat;
           background-size: cover;
+          background-position: center;
         }
       }
     }
   }
-  .our-leadership {
-    background-color: black;
-    color: white;
-    width: 100%;
-    padding: 60px;
-    h3 {
-      letter-spacing: 2px;
-      font-weight: 300;
-    }
-    p {
-      letter-spacing: 6px;
-      font-weight: 300;
-      line-height: 30px;
-    }
-  }
-  .job-title {
-    background-color: black;
-    color: white;
-    display: inline-block;
-    padding: 30px;
-    line-height: 40px;
-    letter-spacing: 1px;
-    .card-general {
-      :nth-child(2) {
-        font-weight: 800;
-        font-size: 30px;
+  .wraper-contain {
+    display: flex;
+    .our-leadership {
+      background-color: black;
+      color: white;
+      width: 100%;
+      padding: 60px;
+      h3 {
+        letter-spacing: 2px;
+        font-weight: 300;
       }
-      :nth-child(3) {
-        font-size: 14px;
+      p {
+        letter-spacing: 6px;
+        font-weight: 300;
+        line-height: 30px;
+      }
+    }
+    .job-title {
+      background-color: black;
+      color: white;
+      display: inline-block;
+      padding: 30px;
+      line-height: 40px;
+      letter-spacing: 1px;
+      .card-general {
+        :nth-child(2) {
+          font-weight: 800;
+          font-size: 30px;
+        }
+        :nth-child(3) {
+          font-size: 14px;
+        }
       }
     }
   }
 }
-@media only screen and (max-width: 1000px), (max-height: 900px) {
+@media only screen and (max-width: 1024px) {
   .the-home {
     .home-page-header {
       .header-title {
@@ -317,6 +326,122 @@ export default {
       }
       .header-descripton {
         font-size: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .the-home {
+    .home-page-header {
+      .header-title {
+        font-size: 53.9px;
+      }
+      .header-descripton {
+        font-size: 7px;
+        letter-spacing: 1px;
+      }
+    }
+    .lastest-works-layout {
+      height: 1526px;
+      flex-wrap: wrap;
+      .latest-works-left {
+        width: 100%;
+        margin-right: 0;
+      }
+      .latest-works-right {
+        width: 100%;
+        margin-left: 0;
+        height: 810px;
+      }
+      .right-below {
+        .left {
+          margin-bottom: 0;
+        }
+        .right {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .the-home {
+    .home-page-header {
+      padding: 0 20px;
+      .header-title {
+        font-size: 53.9px;
+      }
+      .header-descripton {
+        font-size: 6px;
+        letter-spacing: 1px;
+        line-height: 20px;
+      }
+    }
+    .lastest-works-layout {
+      height: 1144px;
+      flex-wrap: wrap;
+      .latest-works-left {
+        width: 100%;
+        margin-right: 0;
+        height: 300px;
+      }
+      .latest-works-right {
+        width: 100%;
+        height: 1205px;
+        .right-above {
+          height: 20%;
+        }
+        .right-below {
+          height: 50%;
+          flex-wrap: wrap;
+          .left {
+            margin-right: 0;
+            width: 100%;
+          }
+          .right {
+            width: 100%;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    .wraper-contain {
+      flex-direction: column;
+      flex-wrap: wrap;
+      .our-leadership {
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 33px;
+        h3 {
+          letter-spacing: 2px;
+          font-weight: 300;
+          font-size: 34.5px;
+        }
+        p {
+          letter-spacing: 3px;
+          font-weight: 300;
+          line-height: 25px;
+        }
+      }
+      .job-title {
+        background-color: black;
+        color: white;
+        display: inline-block;
+        padding: 30px;
+        line-height: 35px;
+        letter-spacing: 1px;
+        font-size: 10px;
+        padding-right: 80px;
+        .card-general {
+          :nth-child(2) {
+            font-weight: 800;
+            font-size: 25px;
+          }
+          :nth-child(3) {
+            font-size: 14px;
+          }
+        }
       }
     }
   }

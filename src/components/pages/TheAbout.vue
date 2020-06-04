@@ -402,4 +402,36 @@ export default {
     }
   }
 }
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+  .the-about {
+    .vision {
+      height: 350px;
+      .vision-image {
+        .img-contain {
+          .img-top {
+            width: 140px;
+            left: 204px;
+          }
+          .img-middle {
+            width: 160px;
+            left: 69px;
+          }
+          .img-bottom {
+            width: 160px;
+            left: 130px;
+            top: 81px;
+          }
+        }
+      }
+      .vision-content {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        top: 313px;
+        right: 90px;
+      }
+    }
+  }
+}
 </style>
