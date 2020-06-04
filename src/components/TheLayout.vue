@@ -67,6 +67,7 @@ body {
   width: 100%;
   display: block;
   float: right;
+  overflow: hidden;
 }
 /* Extra large devices (large laptops and desktops, 1000px and up) */
 @media only screen and (min-width: 1000px) {

@@ -1,5 +1,5 @@
 <template>
-  <div class="the-about" id="theAbout">
+  <div class="the-about">
     <CardContainer>
       <CardHolder>
         <div class="top-about">
@@ -141,14 +141,14 @@
         </div>
       </CardHolder>
       <CardHolder>
-        <div class="human-resources">
+        <!-- <div class="human-resources">
           <span class="intro">ONE SPIRIT, ONE TEAM, ONE WIN</span>
           <span class="title">Human Resources</span>
           <p>
             “To be a respected solutions company focused on combining state-of-the-art of Machine Learning,
             AI algorithms and delivering world-class quality big data solutions.”
           </p>
-        </div>
+        </div> -->
       </CardHolder>
     </CardContainer>
   </div>
@@ -398,6 +398,38 @@ export default {
             text-align: center;
           }
         }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+  .the-about {
+    .vision {
+      height: 350px;
+      .vision-image {
+        .img-contain {
+          .img-top {
+            width: 140px;
+            left: 204px;
+          }
+          .img-middle {
+            width: 160px;
+            left: 69px;
+          }
+          .img-bottom {
+            width: 160px;
+            left: 130px;
+            top: 81px;
+          }
+        }
+      }
+      .vision-content {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        top: 313px;
+        right: 90px;
       }
     }
   }
