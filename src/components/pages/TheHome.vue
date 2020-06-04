@@ -1,8 +1,8 @@
 <template>
-  <div id="theHome" class="the-home">
+  <div id="home" class="the-home">
     <CardContainer>
       <CardHolder>
-        <div class="home-page-header">
+        <div class="home-page-header" id="home-page">
           <h1 class="header-title">QT-Group</h1>
           <p class="header-descripton">
             THE GLOBAL QT-GROUP NOW HAS 1 COMPANY WITH MANY OFFICES IN VIETNAM ,
@@ -26,14 +26,28 @@
             CALL FOR INVESTMENT OF 100 MILLION USD.
           </p>
           <div class="mouse-scrolldown-layout">
-            <div class="mouse-scrolldown">
+            <div
+              class="mouse-scrolldown"
+              @click="scrollmousedown('lastest-works')"
+            >
               <div class="scrolldown"></div>
             </div>
+          </div>
+          <div class="chatbot-layout">
+            <!-- Load Facebook SDK for JavaScript -->
+            <div id="fb-root"></div>
+            <!-- Your customer chat code -->
+            <div
+              class="fb-customerchat"
+              attribution="setup_tool"
+              page_id="318422449030240"
+              theme_color="#0084ff"
+            ></div>
           </div>
         </div>
       </CardHolder>
       <CardHolder>
-        <div class="lastest-works">
+        <div id="lastest-works" class="lastest-works-layout">
           <CardTitle />
           <div class="latest-works-left">
             <CardGeneral />
@@ -56,7 +70,10 @@
       <CardHolder>
         <div class="our-leadership">
           <h3>Our Leadership</h3>
-          <p>WHEN EACH TALENTED INDIVIDUAL GATHERS TOGETHER, IT MAKES A GREAT SUCCESS.</p>
+          <p>
+            WHEN EACH TALENTED INDIVIDUAL GATHERS TOGETHER, IT MAKES A GREAT
+            SUCCESS.
+          </p>
           <BaseButton :title="titleBtnAboutUs" />
         </div>
         <div class="job-title">
@@ -91,14 +108,14 @@
         </div>
       </CardHolder>
       <CardHolder>
-        <CardTitle :title="maximTitle" />
+        <!-- <CardTitle :title="maximTitle" />
         <CardGeneral>
           <p>
             It was really fun getting to know the team during the project. They
             were all helpful in answering my questions and made me feel at ease.
             The design ended up being better than I could have envisioned!
           </p>
-        </CardGeneral>
+        </CardGeneral> -->
       </CardHolder>
     </CardContainer>
   </div>
@@ -124,6 +141,18 @@ export default {
     return {
       maximTitle: 'WHAT THEY’RE SAYING',
       titleBtnAboutUs: 'Learn About Us'
+    }
+  },
+  methods: {
+    scrollmousedown: function (id) {
+      var element = document.getElementById(id)
+      console.log(element)
+      var top = element.offsetTop
+      window.scroll({
+        top: top,
+        left: 0,
+        behavior: 'smooth'
+      })
     }
   }
 }
@@ -155,6 +184,7 @@ export default {
       font-size: 77px;
       font-weight: 100;
       padding-bottom: 10px;
+      margin: 0;
     }
     .header-descripton {
       letter-spacing: 4px;
@@ -169,7 +199,7 @@ export default {
         position: relative;
         width: 25px;
         height: 40px;
-        border: 2px solid rgb(199, 199, 199);
+        border: 2px solid rgb(158, 158, 158);
         border-radius: 12.5px;
         animation: mouse 2s infinite;
         .scrolldown {
@@ -177,15 +207,26 @@ export default {
           top: 5px;
           width: 5px;
           height: 10px;
-          background-color: rgb(199, 199, 199);
+          background-color: rgb(158, 158, 158);
           left: calc(50% - 3px);
           border-radius: 2px;
           animation: scrolldown 2s infinite;
         }
+        &:hover {
+          border: 2px solid rgb(255, 255, 255);
+        }
       }
     }
+    .messenger-chatbot {
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+      border-radius: 30px;
+      position: fixed;
+      z-index: 1;
+    }
   }
-  .lastest-works {
+  .lastest-works-layout {
     display: flex;
     width: 100%;
     padding-left: 10px;
@@ -268,50 +309,50 @@ export default {
     }
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px), (max-height: 900px) {
   .the-home {
     .home-page-header {
       .header-title {
         font-size: 53.9px;
       }
       .header-descripton {
-        font-size: 10.8px;
+        font-size: 10px;
       }
     }
   }
 }
 @keyframes scrolldown {
-  0%{
+  0% {
     opacity: 1;
     top: 10px;
   }
-  50%{
+  50% {
     opacity: 0;
     top: 25px;
   }
-  70%{
+  70% {
     opacity: 0;
     top: 10px;
   }
-  100%{
+  100% {
     opacity: 1;
     top: 10px;
   }
 }
 @keyframes mouse {
-  0%{
+  0% {
     opacity: 1;
     top: 10px;
   }
-  50%{
+  50% {
     opacity: 1;
     top: 25px;
   }
-  70%{
+  70% {
     opacity: 1;
     top: 10px;
   }
-  100%{
+  100% {
     opacity: 1;
     top: 10px;
   }

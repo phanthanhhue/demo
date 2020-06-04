@@ -1,7 +1,7 @@
 <template>
   <div class="base-button">
     <button class="btn">
-      <slot :title="title"/>
+      <slot>{{title}}</slot>
     </button>
   </div>
 </template>

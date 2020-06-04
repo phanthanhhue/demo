@@ -1,5 +1,5 @@
 <template>
-  <div class="the-about" id="theAbout">
+  <div class="the-about">
     <CardContainer>
       <CardHolder>
         <div class="top-about">
@@ -141,14 +141,14 @@
         </div>
       </CardHolder>
       <CardHolder>
-        <div class="human-resources">
+        <!-- <div class="human-resources">
           <span class="intro">ONE SPIRIT, ONE TEAM, ONE WIN</span>
           <span class="title">Human Resources</span>
           <p>
             “To be a respected solutions company focused on combining state-of-the-art of Machine Learning,
             AI algorithms and delivering world-class quality big data solutions.”
           </p>
-        </div>
+        </div> -->
       </CardHolder>
     </CardContainer>
   </div>
